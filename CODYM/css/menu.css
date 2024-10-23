@@ -1,0 +1,32 @@
+#sidebar {
+    margin-top: 90px;
+    
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #343a40;
+    transition: all 0.3s;
+}
+#sidebar.active {
+    left: 20px;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+#sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#sidebarToggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
