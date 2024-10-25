@@ -34,7 +34,7 @@ body {
 }
 
 .search-bar {
-    position: relative; /* Necesario para la posición absoluta del icono */
+    position: relative;
     display: flex;
     align-items: center;
 }
