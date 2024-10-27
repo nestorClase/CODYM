@@ -90,9 +90,6 @@ body {
     display: block; /* Mostrar cuando se haga clic */
 }
 
-.dropdown-menu .dropdown-item {
-    
-}
 
 .dropdown-menu .dropdown-item:hover {
     background-color: #E40505;
