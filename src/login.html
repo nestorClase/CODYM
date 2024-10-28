@@ -73,6 +73,15 @@ h1, h2{
     font-family: sans-serif;
 }
 
+.credsPlaceHolder::placeholder
+{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    font-family: sans-serif;
+}
+
 
 </style>
 
@@ -104,17 +113,17 @@ h1, h2{
             <div class ="cajaInteriorIzq"> 
                 <img style = "width: 450px;  height: 450px;" src="/imagenes/LogoRegistro2.png" alt="Aceituna"/>
             </div>
-            <div class ="cajaInteriorDrc">
+            <div class ="cajaInteriorDrc" style="display: flex;flex-direction: column;justify-content: space-between;height: 300px;">
 
                 
                 <h1 style ="color: white;">¡Empieza a entrenar con nosotros!</h1>
-                <div class ="caja_texto">
-                   <h2>Nombre y apellidos:</h2>
-                </div>
-                <div class ="caja_texto">
-                   <h2>Contraseña</h2>
-                </div> 
                 
+                <div class="search-bar">
+                    <input type="text" class="credsPlaceHolder" style="background-color: darkgrey;border: 2px solid black;height: 50px;line-height: 50px;" placeholder="Nombre y apellidos">
+                </div>
+                <div class="search-bar">
+                    <input type="text" class="credsPlaceHolder" style="background-color: darkgrey;border: 2px solid black;height: 50px;line-height: 20px;" placeholder="Contraseña">
+                </div>
 
               
 
