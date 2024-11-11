@@ -1,214 +1,227 @@
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
-<link rel="stylesheethref" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheethref" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<style>
+    <style>
+        .carousel {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
 
-.caja_1{
- 
-    border-radius: 20px;
-    background-color: rgb(83, 83, 83, 0.8);
-    width: 1627px;            
-    height: 696px;          
-    border: 2px  black;
-    position: relative;
-}
+        }
 
-.cajaInteriorIzq{
- 
- border: none;
- width: 600px;            
- height: 600px;          
- position: absolute;
- top:45px;
- left: 100px;
- justify-content: center;    
- align-items: center;  
+        .caja_1 {
 
-}
+            border-radius: 20px;
+            background-color: rgb(68, 57, 57, 0.8);
+            width: 1627px;
+            height: 696px;
+            border: 2px black;
+            position: relative;
+        }
 
-.cajaInteriorDrc{
- 
- border: none;
- width: 600px;            
- height: 600px;          
- position: absolute;
- top: 45px;
- left: 900px;
- text-align: center;
- 
-}
+        .cajaInteriorIzq {
 
-.caja_texto{
+            border: none;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            top: 45px;
+            left: 100px;
+            justify-content: center;
+            align-items: center;
 
-    background-color: rgb(83, 83, 83);
-    width: 595px;            
-    height: 40px;  
-    border-radius: 20px;
-    text-align: left;
-    padding-left: 20px;
-}
+        }
 
-.contenedor_1{
+        .cajaInteriorDrc {
 
-    
-    display: flex;             
-    justify-content: center;    
-    align-items: center;       
-    height: 100vh;   
-    background-size: cover;
-    
-}
+            border: none;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            top: 45px;
+            left: 900px;
+            text-align: center;
 
-h1, h2{
-    margin-top: 30px;
-    color: white;
-    font-weight: bold;
-    -webkit-text-stroke: 1.5px black;
-    font-family: sans-serif;
-}
+        }
 
-.caja_textoRegistro{
-    background-color: white;
-    width: 220px;            
-    height: 40px;  
-    border-radius: 20px;
-    text-align: left;
-    padding-left: 20px;
-}
+        .caja_texto {
+
+            background-color: rgb(83, 83, 83);
+            width: 595px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .contenedor_1 {
 
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
 
+        }
 
-</style>
+        h1,
+        h2 {
+            margin-top: 30px;
+            color: white;
+            font-weight: bold;
+            -webkit-text-stroke: 1.5px black;
+            font-family: sans-serif;
+        }
+
+        .caja_textoRegistro {
+            background-color: white;
+            width: 220px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-    
- 
+
+
 
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#"> 
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ZmgJjPgnK54V0R338xoNpOK-Lz6zh9pmz17OxKtmIP-PocCZ4OOe5Od4QEUKFlsxc3Y&usqp=CAU" alt="Cifp viles Logo" style="width:40px;" class="rounded-pill"> 
-         </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ZmgJjPgnK54V0R338xoNpOK-Lz6zh9pmz17OxKtmIP-PocCZ4OOe5Od4QEUKFlsxc3Y&usqp=CAU"
+                    alt="Cifp viles Logo" style="width:40px;" class="rounded-pill">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        
-        <div class="collapse navbar-collapse" >
 
-            
-        <ul class="navbar-nav">
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Formación</a>
-            <ul class="dropdown-menu" data-bs-theme="dark">
-                <li>
-                <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">FP Básica </a>
-            </li>
-            <li>
-             <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">FP Grado Medio</a>
-            </li>
-             <li>
-             <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown"> FP Grado Superior</a>
-            </li>
-            
-            
-     
-         </ul>
-     </li>
-     <li class="nav-item">
-     <a class="nav-link" href="secretaria.js" > Secretaría</a>
-     </li>
-     <li class="nav-item"> 
-     <a class="nav-link" href="novedades.js" >Novedades </a>
-     </li>	
-     </ul>
-     </div>
-     </div>
-     </nav>
+            <div class="collapse navbar-collapse">
 
-     <div class="carousel-inner">
-    
-       <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <div class="carousel-item active">
-            <img src="/CODYM/imagenes/RegistroFondo.png" alt="Los Angeles" class="d-block" style="width:100%">
-            <div class="carousel-caption">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Formación</a>
+                        <ul class="dropdown-menu" data-bs-theme="dark">
+                            <li>
+                                <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">FP Básica </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">FP Grado
+                                    Medio</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown"> FP Grado
+                                    Superior</a>
+                            </li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="secretaria.js"> Secretaría</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.js">Novedades </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/imagenes/RegistroFondo.png" alt="Los Angeles" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/imagenes/RegistroFondo2.png" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/imagenes/RegistroFondo3.png" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                </div>
             </div>
         </div>
 
-        <div class="carousel-item">
-            <img src="/CODYM/imagenes/RegistroFondo2.png" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-            </div> 
-        </div>
-  
-        <div class="carousel-item">
-            <img src="/CODYM/imagenes/RegistroFondo3.png" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-            </div>  
-        </div>
-    
-
-    
-    
+    </div>
 
 
-     <div class ="contenedor_1">
 
-        <div class ="caja_1">
-            <div class ="cajaInteriorIzq"> 
-                <img style = "width: 600px;  height: 595px;" src="/CODYM/imagenes/LogoRegistro2.png" alt="Aceituna"/>
+    <div class="contenedor_1">
+
+        <div class="caja_1">
+            <div class="cajaInteriorIzq">
+                <img style="width: 600px;  height: 595px;" src=" /imagenes/LogoRegistro2.png" alt="Aceituna" />
             </div>
-            <div class ="cajaInteriorDrc">
+            <div class="cajaInteriorDrc">
 
-                
-                <h1 style ="color: white;">¡Empieza a entrenar con nosotros!</h1>
-                <div class ="caja_texto">
-                   <h2>Nombre y apellidos:</h2>
+
+                <h1 style="color: white;">¡Empieza a entrenar con nosotros!</h1>
+                <div class="caja_texto">
+                    <h2>Nombre y apellidos:</h2>
                 </div>
-                <div class ="caja_texto">
-                   <h2>Correo electrónico:</h2>
-                </div> 
-                <div class ="caja_texto">
-                   <h2>Fecha de nacimiento:</h2>
+                <div class="caja_texto">
+                    <h2>Correo electrónico:</h2>
                 </div>
-                <div class ="caja_texto">
-                   <h2>Número de teléfono:</h2>
-                </div> 
-                <div class ="caja_texto">
-                   <h2>DNI:</ph2>
+                <div class="caja_texto">
+                    <h2>Fecha de nacimiento:</h2>
                 </div>
-                <div class ="caja_texto">
-                   <h2>Número de cuenta:</h2>
+                <div class="caja_texto">
+                    <h2>Número de teléfono:</h2>
                 </div>
-                <div class ="caja_textoRegistro">
+                <div class="caja_texto">
+                    <h2>DNI:</h2>
+                </div>
+                <div class="caja_texto">
+                    <h2>Número de cuenta:</h2>
+                </div>
+                <div class="caja_textoRegistro">
                     <h2>Registrarse</h2>
-                 </div>
+                </div>
 
-              
+
 
             </div>
 
 
         </div>
 
-     </div>
-        
-    </div>   
-        
-  <div</div>
+    </div>
+
+
+
+
+
+
 
 
 </body>
+
 </html>
-  
