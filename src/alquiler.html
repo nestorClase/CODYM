@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Nav</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/stylealquiler.css" />
+  <link rel="stylesheet" href="/css/menuIndex.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a href="index.html"><img src="/imagenes/logo.jpg" alt="Logo gymnasio" /></a>
+    </div>
+    <div class="search-container">
+      <input type="text" placeholder="Buscar..." class="search-input">
+      <button class="search-button">🔍</button>
+  </div>
+    <div class="social-icons">
+      <a href="#"><img src="/imagenes/linkedin-removebg-preview.png" class="social-icons" alt="LinkedIn" /></a>
+      <a href="#"><img src="/imagenes/twitter-removebg-preview.png" class="social-icons" alt="Twitter" /></a>
+      <a href="#"><img src="/imagenes/instagram-removebg-preview.png" class="social-icons" alt="Instagram" /></a>
+      <a href="#"><img src="/imagenes/facebook-removebg-preview.png" class="social-icons" alt="Facebook" /></a>
+    </div>
+  </div>
+</nav>
+</header>
+<body>
+    <section class="Menu">
+        <div id="sidebar">
+          <ul>
+            <li><a href="#">Inicio de sesion</a></li>
+            <li><a href="#">Registro</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+    <div class="container">
+        <button id="sidebarToggle" type="button" class="btn btn-lg btn-outline-danger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
+          document.getElementById('sidebar').classList.toggle('active');
+        });
+      </script>
+      </section>
+      <section class="containerHorario" style="display: flex; gap: 20px; margin-left: 15%; margin-top: 30px;">
+        <!-- Primer Carrusel -->
+        <div class="carousel-container">
+          <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imagenes/gymCarrousel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption-container">
+                  <h5>Rutinas Personalizadas</h5>
+                  <p>Entrenadores que adaptan tu rutina según tus metas para optimizar resultados.</p>
+                  <button class="btn btn-primary">Más Información</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/gymCarrousel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption-container">
+                  <h5>Equipos Modernos</h5>
+                  <p>Instalaciones de última generación, diseñadas para mejorar tu entrenamiento.</p>
+                  <button class="btn btn-primary">Más Información</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/gymCarrousel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption-container">
+                  <h5>Comunidad Activa</h5>
+                  <p>Clases grupales y retos semanales para mantenerte motivado y acompañado.</p>
+                  <button class="btn btn-primary">Más Información</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+         <!-- Segundo Carrusel -->
+         <div class="carousel-container">
+            <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/imagenes/gymCarrousel1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption-container">
+                    <h5>Rutinas Personalizadas</h5>
+                    <p>Entrenadores que adaptan tu rutina según tus metas para optimizar resultados.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/imagenes/gymCarrousel2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption-container">
+                    <h5>Equipos Modernos</h5>
+                    <p>Instalaciones de última generación, diseñadas para mejorar tu entrenamiento.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/imagenes/gymCarrousel3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption-container">
+                    <h5>Comunidad Activa</h5>
+                    <p>Clases grupales y retos semanales para mantenerte motivado y acompañado.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      </section>
+  </div>
+</section>
+</body>
+</html>
