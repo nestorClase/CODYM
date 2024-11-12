@@ -33,45 +33,21 @@ body {
     font-weight: bold;
 }
 
-.search-container {
+.search-bar {
+    position: relative; /* Necesario para la posición absoluta del icono */
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    max-width: 100%;
-    margin-left: 20px;
+
 }
 
-.search-input {
-    flex-grow: 1;
+.search-bar input {
+    padding: 8px;
+    background-color: #585555;
+    border-radius: 25px;
     padding: 8px;
     border: none;
-    border-radius: 5px 0 0 5px;
-}
-
-.search-button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-}
-
-.search-button:hover {
-    background-color: #777;
-}
-
-/* Estilos responsive */
-@media (min-width: 768px) {
-    .search-container {
-        max-width: 60%; /* La barra de búsqueda ocupa el 60% del nav */
-    }
-}
-
-@media (min-width: 1024px) {
-    .search-container {
-        max-width: 70%; /* La barra de búsqueda ocupa el 70% del nav */
-    }
+    width: 800px;
+    padding-left: 40px; /* Espacio para la lupa */
 }
 
 .search-icon {
@@ -122,4 +98,12 @@ body {
 
 .subelement{
     left:20px;
+}
+
+.reservar-btn{
+    display: flex;
+    background-color: #E40505;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
